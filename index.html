@@ -7,10 +7,10 @@
 </head>
 <body>
 
-<div class="etsy">
+<div class="etsyHeader">
 
 	<header>
-		<h2>Etsy</h2>
+		<h2>Etsy: the Gathering</h2>
 		<input class="search" type="search" placeholder="Magic the Gathering">
 		<button class="search">Search</button>
 		<ul class="headerNav">
@@ -34,31 +34,81 @@
 		</ul>
 	</nav>
 
+</div>
+
+<div class="body">
+
 	<sidebar>
-		<p>Show results for</p>
+		<p>Show results for:</p>
 		<ul class="sidebarNav">
-			<li>All Categories</li>
-				<li>Home & Living</li>
-				<li>Art & Collectibles</li>
-				<li>Weddings</li>
-				<li>Clothing</li>
-				<li>Jewelry</li>
-				<li>Paper & Party Supplies</li>
-				<li>Accessories</li>
-				<li>Craft Supplies & Tools</li>
-				<li>Bags & Purses</li>
-				<li>Bath & Beauty</li>
-				<li>Shoes</li>
-				<li>Books, Movies & Music</li>
-				<li>Electronics & Accessories</li>
-				<li>Toys & Games</li>
-				<li>Pet Supplies</li>
+			<p>All Categories</p>
+				<li><a href="#">Home & Living</a></li>
+				<li><a href="#">Art & Collectibles</a></li>
+				<li><a href="#">Weddings</a></li>
+				<li><a href="#">Clothing</a></li>
+				<li><a href="#">Jewelry</a></li>
+				<li><a href="#">Paper & Party Supplies</a></li>
+				<li><a href="#">Accessories</a></li>
+				<li><a href="#">Craft Supplies & Tools</a></li>
+				<li><a href="#">Bags & Purses</a></li>
+				<li><a href="#">Bath & Beauty</a></li>
+				<li><a href="#">Shoes</a></li>
+				<li><a href="#">Books, Movies & Music</a></li>
+				<li><a href="#">Electronics & Accessories</a></li>
+				<li><a href="#">Toys & Games</a></li>
+				<li><a href="#">Pet Supplies</a></li>
+		</ul>
+		<p>Refine your search</p>
+		<ul class="sidebarRef">
+			<li>Item Type</li>
+				<li><input class="checkbubble" type="radio">All Items</li>
+				<li><input class="checkbubble" type="radio">Handmade</li>
+				<li><input class="checkbubble" type="radio">Vintage</li>
+			<li><hr></li>
+			<li>Price</li>
+				<input class="searchPrice" type="search" placeholder="Low">to
+				<input class="searchPrice"	type="search" placeholder="High">
+				<button class="priceUpdate">Go</button>
+			<li><hr></li>
+			<li>Filter by Color</li>
+			<li><button class="color1"></button>
+					<button class="color2"></button>
+					<button class="color3"></button>
+					<button class="color4"></button>
+					<button class="color5"></button>
+					<button class="color6"></button>
+					<button class="color7"></button>
+					<button class="color8"></button></li>
+			<li><hr></li>
+			<li>Ordering Options</li>
+				<li><input class="checkbox" type="checkbox">Accepts Etsy Gift Cards</li>
+				<li><input class="checkbox" type="checkbox">Customizable</li>
+			<li>Shop Location</li>
+				<li><input class="checkbubble" type="radio">Accepts Etsy Gift Cards</li>
+				<li><input class="checkbubble" type="radio">Customizable</li>
+			<li>Choose a custom location</li>
+			<li><hr></li>
+			<li>Ship To</li>
+				<li><select class="countrymenu">
+							<option>United States</option>
+							<option>Everywhere Else</option>					
+						</select></li>
 		</ul>
 	</sidebar>
 
 </div>
 
+ <script type="text/template" id="itemTemplate">
+// 	<div>
+// 		<img src="<%= Images[0].url_170x135 %>">
+// 		<p><%= title %></p>
+// 		<p class="price">$<%= price %></p>
+// 	</div>
+// 	<hr>
+// </script>
+
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>

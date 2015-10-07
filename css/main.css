@@ -1,0 +1,58 @@
+.header {
+  width: 100%;
+  margin: 20px auto; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+header {
+  width: 100%; }
+  header h2 {
+    display: inline-block;
+    margin-left: 30px; }
+  header ul {
+    display: inline-block; }
+  header li {
+    display: inline-block;
+    margin-left: 20px; }
+
+nav ul {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  border-left: none;
+  border-right: none; }
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+sidebar p {
+  margin-left: 20px;
+  padding: 0;
+  font-size: 0.9em; }
+
+sidebar ul {
+  border: 1px solid lightgrey;
+  width: 200px;
+  padding: 10px;
+  margin-left: 20px; }
+  sidebar ul p {
+    margin: 0;
+    font-size: 0.9em; }
+  sidebar ul li {
+    margin-left: 10px;
+    padding: 3px;
+    font-size: 0.9em; }
+
+sidebar .searchPrice {
+  width: 50px; }
+
+sidebar hr {
+  width: 150px;
+  text-align: center; }

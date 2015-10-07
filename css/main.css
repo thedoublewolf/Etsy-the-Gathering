@@ -1,6 +1,14 @@
-.header {
-  width: 100%;
-  margin: 20px auto; }
+body {
+  background-color: #F5F5F1; }
+
+.etsyHeader {
+  margin: 0 auto;
+  text-align: center;
+  width: 1000px; }
+
+.etsyBody {
+  margin: 0 auto;
+  width: 1000px; }
 
 ul {
   list-style: none; }
@@ -9,7 +17,7 @@ a {
   text-decoration: none; }
 
 header {
-  width: 100%; }
+  background-color: white; }
   header h2 {
     display: inline-block;
     margin-left: 30px; }
@@ -18,19 +26,18 @@ header {
   header li {
     display: inline-block;
     margin-left: 20px; }
-
-nav ul {
-  display: inline-block;
-  width: 100%;
-  border: 1px solid lightgrey;
-  padding: 20px;
-  border-left: none;
-  border-right: none; }
-
-nav li {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px; }
+  header nav {
+    font-size: 0.9em; }
+    header nav ul {
+      display: inline-block;
+      border: 1px solid lightgrey;
+      padding: 20px;
+      border-left: none;
+      border-right: none; }
+    header nav li {
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px; }
 
 sidebar p {
   margin-left: 20px;
@@ -38,6 +45,7 @@ sidebar p {
   font-size: 0.9em; }
 
 sidebar ul {
+  background-color: white;
   border: 1px solid lightgrey;
   width: 200px;
   padding: 10px;

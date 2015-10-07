@@ -1,17 +1,26 @@
-.header {
-	width: 100%;
-	margin: 20px auto;
+body {
+	background-color: #F5F5F1;
 }
 
-ul {
-	list-style: none;
+.etsyHeader {
+	margin: 0 auto;
+	text-align: center;
+	width: 1000px;
 }
-a {
-	text-decoration: none;
+.etsyBody {
+	margin: 0 auto;
+	width: 1000px;
 }
+
+	ul {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+	}
 
 header {
-	width: 100%;
+	background-color: white;
 	h2 {
 			display: inline-block;
 			margin-left: 30px;
@@ -23,52 +32,52 @@ header {
 				display: inline-block;
 				margin-left: 20px;
 	}
-}
-
-nav {
-	ul {
-		display: inline-block;
-		width: 100%;
-		border: 1px solid lightgrey;
-		padding: 20px;
-		border-left: none;
-		border-right: none;
-	}
-		li {
-		display: inline-block;
-		margin-left: 10px;
-		margin-right: 10px;
-		}
-}
-
-sidebar {
-	p {
-		margin-left: 20px;
-		padding: 0;
+	nav {
 		font-size: 0.9em;
-	}
-	ul {
-		border: 1px solid lightgrey;
-		width: 200px;
-		padding: 10px;
-		margin-left: 20px;
-		p {
-			margin: 0;
-			font-size: 0.9em;
+		ul {
+			display: inline-block;
+			border: 1px solid lightgrey;
+			padding: 20px;
+			border-left: none;
+			border-right: none;
 		}
-		li {
+			li {
+			display: inline-block;
 			margin-left: 10px;
-			padding: 3px;
-			font-size: 0.9em;
-		}
-	}
-	.searchPrice {
-		width: 50px;
-	}
-	hr {
-		width: 150px;
-		text-align: center;
+			margin-right: 10px;
+			}
 	}
 }
+
+	sidebar {
+		p {
+			margin-left: 20px;
+			padding: 0;
+			font-size: 0.9em;
+		}
+		ul {
+			background-color: white;
+			border: 1px solid lightgrey;
+			width: 200px;
+			padding: 10px;
+			margin-left: 20px;
+			p {
+				margin: 0;
+				font-size: 0.9em;
+			}
+			li {
+				margin-left: 10px;
+				padding: 3px;
+				font-size: 0.9em;
+			}
+		}
+		.searchPrice {
+			width: 50px;
+		}
+		hr {
+			width: 150px;
+			text-align: center;
+		}
+	}
 
 

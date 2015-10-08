@@ -1,7 +1,5 @@
 (function () {
 
-  var firstItem = items.results[0];
-
   var templateString = $('#itemListing').text();
 
   var renderTemplate = _.template(templateString);

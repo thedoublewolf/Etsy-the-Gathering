@@ -19,9 +19,11 @@ hr {
 	height: 1px;
 	border: 0;
 }
-
 	ul {
 		list-style: none;
+	}
+	li {
+		display: inline-block;
 	}
 	a {
 		text-decoration: none;
@@ -31,21 +33,83 @@ header {
 	width: 980px;
 	margin: 0 auto;
 	background-color: white;
+	text-align: left;
+	.etsyHeader {
+		display: inline-block;
+	}
+	.etsyTitle {
+		display: inline-block;
+		padding-top: 10px;
+	}
+	.etsy {
+		color: #ED6700;
+		font-family: times;
+		font-weight: 300;
+		font-size: 2.5em;
+	}
+	.gathering {
+		color: #3F3D4C;
+		font-family: times;
+		font-weight: bold;
+		font-size: 1.5em; 
+	}
+	.sell {
+		color: #5D91B8;
+	}
+	.register {
+		color: #5D91B8;
+	}
+	.signIn {
+		background-color: white;
+		border: 1px solid #5D91B8;
+		color: #5D91B8;
+		border-radius: 2px;
+		padding: 8px;
+	}
+	.cart {
+		background-color: white;
+		border: none;
+		border-left: 1px solid lightgrey;
+		color: grey;
+		font-size: 0.8em;
+	}
 	h2 {
-			display: inline-block;
-			margin-left: 30px;
+		display: inline-block;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.gathering {
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: 0;
+	}
+	.search {
+		display: inline-block;
+		border: 1px solid lightgrey;
+		border-radius: 3px;
+		margin-bottom: 10px;
+	}
+	.searchBox {
+		border: none;
+		width: 250px;
+		padding-left: 10px;
+	}
+	.searchButton {
+		background-color: #46A7C7;
+		border: none;
+		color: white;
+		padding: 5px 10px 5px 10px;
+
 	}
 	ul {
 			display: inline-block;
-			margin-bottom: 0px;
-	}
-		li {
-				display: inline-block;
-				margin-left: 20px;
+			margin: 0px;
+			padding-left: 100px;
 	}
 	nav {
 		width: 100%;
 		font-size: 0.9em;
+		text-align: left;
 		ul {
 			margin-top: 0px;
 			width: 980px;
@@ -60,10 +124,12 @@ header {
 			display: inline-block;
 			margin-left: 10px;
 			margin-right: 10px;
+			a {
+				color: grey;
+			}
 			}
 	}
 }
-
 	sidebar {
 		width: 25%;
 		float: left;
@@ -77,14 +143,20 @@ header {
 			border: 1px solid lightgrey;
 			width: 220px;
 			padding: 10px;
+			margin-top: 0px;
 			margin-left: 0px;
 			p {
 				margin: 0;
-				font-size: 0.9em;
+				font-size: 0.85em;
 			}
 			li {
-				padding: 3px;
-				font-size: 0.9em;
+				display: block;
+				padding: 5px;
+				font-size: 0.85em;
+				a {
+					padding: 20px;
+					color: #5D91B8;
+				}
 			}
 			hr {
 				width: 210px;
@@ -156,15 +228,15 @@ header {
 		padding-left: 205px;
 	}
 	.magicItem {
-		width: 215px;
-		height: 215px;
+		width: 225px;
+		height: 225px;
 		border: 1px solid lightgrey;
 		border-radius: 2px;
 		display: inline-block;
-		margin: 10px;
+		margin: 5px;
 		overflow: hidden;
 		.magicpic {
-			width: 215px;
+			width: 225px;
 		}
 		.title {
 			margin-top: 2px;
@@ -172,8 +244,8 @@ header {
 			margin-right: 5px;
 			margin-bottom: 0px;
 			font-size: 0.7em;
-			overflow: hidden;
 			white-space: nowrap;
+			overflow: hidden;
 			text-overflow: ellipsis;
 		}
 		.shop {

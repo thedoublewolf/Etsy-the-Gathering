@@ -10,7 +10,7 @@ body {
 	padding-bottom: 0px;
 }
 .etsyBody {
-	margin: 40px auto;
+	margin: 20px auto;
 	width: 980px;
 }
 hr {
@@ -75,7 +75,7 @@ header {
 		ul {
 			background-color: white;
 			border: 1px solid lightgrey;
-			width: 200px;
+			width: 220px;
 			padding: 10px;
 			margin-left: 0px;
 			p {
@@ -83,10 +83,45 @@ header {
 				font-size: 0.9em;
 			}
 			li {
-				margin-left: 10px;
 				padding: 3px;
 				font-size: 0.9em;
 			}
+			hr {
+				width: 210px;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+			div {
+				width: 18px;
+				height: 18px;
+				border: 1px solid lightgrey;
+				border-radius: 2px;
+				display: inline-block;
+			}
+			.color1 {
+				background-color: #EB1C2F;
+			}
+			.color2 {
+				background-color: #F88200;
+			}
+			.color3 {
+				background-color: #F1CD00;
+			}
+			.color4 {
+				background-color: #42C200;
+			}
+			.color5 {
+				background-color: #3ECBF7;
+			}
+			.color6 {
+				background-color: #9D00FD;
+			}
+			.color7 {
+				background-color: #000000;
+			}
+			.color8 {
+				background-color: #FFFFFF;
+			}	
 		}
 		.searchPrice {
 			width: 50px;
@@ -98,10 +133,70 @@ header {
 	}
 
 .magicStuff {
+	text-align: center;
 	float: right;
-	position: 0;
 	width: 75%;
-	border: 1px solid black;
+	border: 0px solid black;
+	margin-top: 12px;
+	ul {
+		float: left;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 5px;
+
+	}
+	li {
+		display: inline-block;
+		font-size: 0.9em;
+	}
+	.cat {
+		padding-left: 20px;
+	}
+	.sort {
+		padding-left: 205px;
+	}
+	.magicItem {
+		width: 215px;
+		height: 215px;
+		border: 1px solid lightgrey;
+		border-radius: 2px;
+		display: inline-block;
+		margin: 10px;
+		overflow: hidden;
+		.magicpic {
+			width: 215px;
+		}
+		.title {
+			margin-top: 2px;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 0px;
+			font-size: 0.7em;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.shop {
+			margin-top: 5px;
+			margin-left: 5px;
+			float: left;
+			font-size: 0.7em;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			color: #ACAAAC;
+		}
+		.price {
+			color: #8CC015;
+			margin-top: 5px;
+			margin-right: 5px;
+			float: right;
+			font-size: 0.7em;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+	}
 }
 
 

@@ -9,7 +9,7 @@ body {
   padding-bottom: 0px; }
 
 .etsyBody {
-  margin: 40px auto;
+  margin: 20px auto;
   width: 980px; }
 
 hr {
@@ -64,16 +64,41 @@ sidebar {
   sidebar ul {
     background-color: white;
     border: 1px solid lightgrey;
-    width: 200px;
+    width: 220px;
     padding: 10px;
     margin-left: 0px; }
     sidebar ul p {
       margin: 0;
       font-size: 0.9em; }
     sidebar ul li {
-      margin-left: 10px;
       padding: 3px;
       font-size: 0.9em; }
+    sidebar ul hr {
+      width: 210px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    sidebar ul div {
+      width: 18px;
+      height: 18px;
+      border: 1px solid lightgrey;
+      border-radius: 2px;
+      display: inline-block; }
+    sidebar ul .color1 {
+      background-color: #EB1C2F; }
+    sidebar ul .color2 {
+      background-color: #F88200; }
+    sidebar ul .color3 {
+      background-color: #F1CD00; }
+    sidebar ul .color4 {
+      background-color: #42C200; }
+    sidebar ul .color5 {
+      background-color: #3ECBF7; }
+    sidebar ul .color6 {
+      background-color: #9D00FD; }
+    sidebar ul .color7 {
+      background-color: #000000; }
+    sidebar ul .color8 {
+      background-color: #FFFFFF; }
   sidebar .searchPrice {
     width: 50px; }
   sidebar hr {
@@ -81,7 +106,57 @@ sidebar {
     text-align: center; }
 
 .magicStuff {
+  text-align: center;
   float: right;
-  position: 0;
   width: 75%;
-  border: 1px solid black; }
+  border: 0px solid black;
+  margin-top: 12px; }
+  .magicStuff ul {
+    float: left;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px; }
+  .magicStuff li {
+    display: inline-block;
+    font-size: 0.9em; }
+  .magicStuff .cat {
+    padding-left: 20px; }
+  .magicStuff .sort {
+    padding-left: 205px; }
+  .magicStuff .magicItem {
+    width: 215px;
+    height: 215px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden; }
+    .magicStuff .magicItem .magicpic {
+      width: 215px; }
+    .magicStuff .magicItem .title {
+      margin-top: 2px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 0px;
+      font-size: 0.7em;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+    .magicStuff .magicItem .shop {
+      margin-top: 5px;
+      margin-left: 5px;
+      float: left;
+      font-size: 0.7em;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #ACAAAC; }
+    .magicStuff .magicItem .price {
+      color: #8CC015;
+      margin-top: 5px;
+      margin-right: 5px;
+      float: right;
+      font-size: 0.7em;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }

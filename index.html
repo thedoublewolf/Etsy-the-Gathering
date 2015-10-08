@@ -76,14 +76,14 @@
 				<button class="priceUpdate">Go</button>
 			<li><hr></li>
 			<li>Filter by Color</li>
-			<li><button class="color1"></button>
-					<button class="color2"></button>
-					<button class="color3"></button>
-					<button class="color4"></button>
-					<button class="color5"></button>
-					<button class="color6"></button>
-					<button class="color7"></button>
-					<button class="color8"></button></li>
+			<li><div class="color1"></div>
+					<div class="color2"></div>
+					<div class="color3"></div>
+					<div class="color4"></div>
+					<div class="color5"></div>
+					<div class="color6"></div>
+					<div class="color7"></div>
+					<div class="color8"></div></li>
 			<li><hr></li>
 			<li>Ordering Options</li>
 				<li><input class="checkbox" type="checkbox">Accepts Etsy Gift Cards</li>
@@ -103,22 +103,32 @@
 
 	<content>
 		<div class="magicStuff">
+		<div>
+			<ul>
+				<li class="cat">All Categories > "Magic the Gathering" (2487 Results)</li>
+				<li class="sort">Sort by: <select class="sortmenu">
+							<option>Relevancy</option>
+							<option>Price</option>					
+						</select>
+			</ul>
+		</div>
 			<script type="text/template" id="itemListing">
-				<div>
-					<img src="<%= Images[0].url_170x135 %>">
-					<p><%= title %></p>
-					<p class="price">$<%= price %></p>
+				<div class="magicItem">
+					<img class="magicpic" src="<%= Images[0].url_170x135 %>">
+					<p class="title"><%= title %></p>
+					<p class="shop"><%= Shop.shop_name %></p>
+					<p class="price">$<%= price + ' USD' %></p>
 				</div>
 			</script>
 		</div>
 	</content>
 
+</div>
+
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
-
-</div>
 
 </body>
 </html>

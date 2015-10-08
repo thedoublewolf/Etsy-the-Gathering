@@ -19,13 +19,16 @@
 			<li><button class="signIn">Sign in</button>
 			<li><button class="cart">Cart</button>
 		</ul>
-
-
+	</header>
+</div>
+<div class="etsyHeader">
+<hr>
+	<header>
 	<nav>
 		<ul class="navLinks">
 			<li><a href="#">Clothing & Accessories</a></li>
 			<li><a href="#">Jewelry</a></li>
-			<li><a href="#">Craf Supplies & Tools</a></li>
+			<li><a href="#">Craft Supplies & Tools</a></li>
 			<li><a href="#">Weddings</a></li>
 			<li><a href="#">Entertainment</a></li>
 			<li><a href="#">Home & Living</a></li>
@@ -34,6 +37,7 @@
 		</ul>
 	</nav>
 </header>
+<hr>
 
 </div>
 
@@ -97,14 +101,17 @@
 		</ul>
 	</sidebar>
 
- <script type="text/template" id="itemTemplate">
-// 	<div>
-// 		<img src="<%= Images[0].url_170x135 %>">
-// 		<p><%= title %></p>
-// 		<p class="price">$<%= price %></p>
-// 	</div>
-// 	<hr>
-// </script>
+	<content>
+		<div class="magicStuff">
+			<script type="text/template" id="itemListing">
+				<div>
+					<img src="<%= Images[0].url_170x135 %>">
+					<p><%= title %></p>
+					<p class="price">$<%= price %></p>
+				</div>
+			</script>
+		</div>
+	</content>
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>

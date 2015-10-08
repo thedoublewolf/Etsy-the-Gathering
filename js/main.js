@@ -2,12 +2,12 @@
 
   var firstItem = items.results[0];
 
-  var templateString = $('itemTemplate').text();
+  var templateString = $('#itemListing').text();
 
-  var templateFunction = _.template(templateString);
+  var renderTemplate = _.template(templateString);
 
   _.each(items.results, function (item){
-  	 var itemHTML = templateFunction(item);
+  	 var itemHTML = renderTemplate(item);
   	$('.magicStuff').append(itemHTML);
 	});
 

@@ -9,7 +9,7 @@
 
 <div class="etsyHeader">
 
-	<header>
+	<header class="header">
 		<div class="etsyTitle">
 			<h2 class="etsy">Etsy:</h2>
 			<p class="gathering">the Gathering</p>
@@ -22,13 +22,18 @@
 			<li><a href="#" class="sell">Sell on Etsy</a></li>
 			<li><a href="#" class="register">Register</a></li>
 			<li><button class="signIn">Sign in</button></li>
-			<li><button class="cart">Cart</button></li>
+			<li><button class="cart">
+						<ul>
+							<li><img class="cartImage" src="images/cart.png"></li>
+							<li><p class="cartName">Cart</p></li>
+						</ul>
+					</button></li>
 		</ul>
 	</header>
 </div>
 <div class="etsyHeader">
 <hr>
-	<header>
+	<header class="subHeader">
 	<nav>
 		<ul class="navLinks">
 			<li><a href="#">Clothing & Accessories</a></li>
@@ -71,14 +76,16 @@
 		<p>Refine your search</p>
 		<ul class="sidebarRef">
 			<li>Item Type</li>
-				<li><input class="checkbubble" type="radio">All Items</li>
-				<li><input class="checkbubble" type="radio">Handmade</li>
-				<li><input class="checkbubble" type="radio">Vintage</li>
+				<li><input class="checkbubble" type="radio"><a href="#">All Items</a></li>
+				<li><input class="checkbubble" type="radio"><a href="#">Handmade</a></li>
+				<li><input class="checkbubble" type="radio"><a href="#">Vintage</a></li>
 			<li><hr></li>
 			<li>Price</li>
-				<input class="searchPrice" type="search" placeholder="Low">to
-				<input class="searchPrice"	type="search" placeholder="High">
-				<button class="priceUpdate">Go</button>
+			<div class="searchPrice">
+				<div>$<input type="search" placeholder="Low"></div> to
+				<div>$<input type="search" placeholder="High"></div>
+				<button class="priceUpdate"></button>
+			</div>
 			<li><hr></li>
 			<li>Filter by Color</li>
 			<li><div class="color1"></div>
@@ -91,12 +98,12 @@
 					<div class="color8"></div></li>
 			<li><hr></li>
 			<li>Ordering Options</li>
-				<li><input class="checkbox" type="checkbox">Accepts Etsy Gift Cards</li>
-				<li><input class="checkbox" type="checkbox">Customizable</li>
+				<li><input class="checkbox" type="checkbox"><a href="#">Accepts Etsy Gift Cards</a></li>
+				<li><input class="checkbox" type="checkbox"><a href="#">Customizable</a></li>
 			<li><hr></li>
 			<li>Shop Location</li>
-				<li><input class="checkbubble" type="radio">Accepts Etsy Gift Cards</li>
-				<li><input class="checkbubble" type="radio">Customizable</li>
+				<li><input class="checkbubble" type="radio"><a href="#">Accepts Etsy Gift Cards</a></li>
+				<li><input class="checkbubble" type="radio"><a href="#">Customizable</a></li>
 			<li>Choose a custom location</li>
 			<li><hr></li>
 			<li>Ship To</li>
@@ -120,6 +127,10 @@
 		</div>
 			<script type="text/template" id="itemListing">
 				<div class="magicItem">
+					<div>
+						<img class="heartHidden" src="images/heart.png">
+						<img class="hamburgerHidden" src="images/hamburger.png">
+					</div>
 					<img class="magicpic" src="<%= Images[0].url_170x135 %>">
 					<p class="title"><%= title %></p>
 					<p class="shop"><%= Shop.shop_name %></p>

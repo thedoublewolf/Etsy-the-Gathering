@@ -29,11 +29,13 @@ hr {
 		text-decoration: none;
 	}
 
-header {
+.header {
 	width: 980px;
 	margin: 0 auto;
 	background-color: white;
 	text-align: left;
+	padding-bottom: 15px;
+}
 	.etsyHeader {
 		display: inline-block;
 	}
@@ -55,10 +57,20 @@ header {
 	}
 	.sell {
 		color: #5D91B8;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.sell:hover {
+		text-decoration: underline;
 	}
 	.register {
 		color: #5D91B8;
+		padding-right: 10px;
 	}
+	.register:hover {
+		text-decoration: underline;
+	}
+
 	.signIn {
 		background-color: white;
 		border: 1px solid #5D91B8;
@@ -66,12 +78,34 @@ header {
 		border-radius: 2px;
 		padding: 8px;
 	}
+	.signIn:hover {
+		background-color: lighten(#5D91B8, 40%);
+	}
 	.cart {
 		background-color: white;
 		border: none;
 		border-left: 1px solid lightgrey;
 		color: grey;
 		font-size: 0.8em;
+		width: 50px;
+		position: relative;
+		top: 10px;
+		left: 10px;
+		opacity: 0.5;
+		ul {
+			padding-left: 0px;
+		}
+	}
+	.cart:hover {
+	opacity: 1;
+	}
+	.cartImage {
+		margin: 0px;
+		width: 25px;
+	}
+	.cartName {
+		margin: 0px;
+		color: black;
 	}
 	h2 {
 		display: inline-block;
@@ -99,7 +133,18 @@ header {
 		border: none;
 		color: white;
 		padding: 5px 10px 5px 10px;
-
+	}
+	.searchButton:hover {
+		background-color: lighten(#46A7C7, 5%);
+	}
+	.headerNav {
+		padding-left: 90px;
+	}
+	.subHeader {
+		width: 980px;
+		margin: 0 auto;
+		background-color: white;
+		text-align: left;
 	}
 	ul {
 			display: inline-block;
@@ -119,6 +164,7 @@ header {
 			padding-bottom: 15px;
 			border-left: none;
 			border-right: none;
+			text-align: center;
 		}
 			li {
 			display: inline-block;
@@ -129,7 +175,6 @@ header {
 			}
 			}
 	}
-}
 	sidebar {
 		width: 25%;
 		float: left;
@@ -196,11 +241,51 @@ header {
 			}	
 		}
 		.searchPrice {
-			width: 50px;
+			border: none;
+			width: 220px;
+			height: 40px;
+			div {
+				padding-left: 10px;
+				display: inline-block;
+				width: 65px;
+				height: 30px;
+				border: 1px solid lightgrey;
+			}
+			input {
+				padding-top: 5px;
+				padding-left: 5px;
+				border: none;
+				width: 50px;
+			}
+			button {
+				background-color: white;
+				border: 1px solid lightgrey;
+				height: 32px;
+				width: 32px;
+				border-radius: 2px;
+				position: relative;
+				padding: 0;
+				margin-left: 5px;
+				top: 11px;
+			}
+			button:before {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				content: "";
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 0 5px 9px;
+				border-color: transparent transparent transparent #5c5c5c;
+			}
 		}
 		hr {
 			width: 150px;
 			text-align: center;
+		}
+		.sidebarRef li a {
+			padding-left: 5px;
 		}
 	}
 
@@ -235,9 +320,53 @@ header {
 		display: inline-block;
 		margin: 5px;
 		overflow: hidden;
+		position: relative;
+		.heartHidden {
+		position: absolute;
+		background-color: white;
+		border-radius: 3px;
+		border: 1px solid lightgrey;
+		width: 20px;
+		height: 20px;
+		padding: 3px;
+		left: 161px;
+		z-index: -1;
+		}
+		.heartShown {
+		position: absolute;
+		background-color: white;
+		border-radius: 3px;
+		border: 1px solid lightgrey;
+		width: 20px;
+		height: 20px;
+		padding: 3px;
+		left: 161px;
+		z-index: -1;
+		}
+		.hamburgerHidden {
+		position: absolute;
+		background-color: white;
+		border-radius: 3px;
+		border: 1px solid lightgrey;
+		width: 20px;
+		height: 20px;
+		padding: 3px;
+		right: 5px;
+		z-index: -1;
+		}
+		.hamburgerShown {
+		position: absolute;
+		background-color: white;
+		border-radius: 3px;
+		border: 1px solid lightgrey;
+		width: 20px;
+		height: 20px;
+		padding: 3px;
+		right: 5px;
+		}
 		.magicpic {
 			width: 225px;
-		}
+	 	}
 		.title {
 			margin-top: 2px;
 			margin-left: 5px;
@@ -268,6 +397,9 @@ header {
 			white-space: nowrap;
 			text-overflow: ellipsis;
 		}
+	}
+	.magicItem:hover {
+		cursor: pointer;
 	}
 }
 

@@ -304,8 +304,7 @@ sidebar {
       width: 20px;
       height: 20px;
       padding: 3px;
-      left: 161px;
-      z-index: -1; }
+      left: 161px; }
     .magicStuff .magicItem .hamburgerHidden {
       position: absolute;
       background-color: white;

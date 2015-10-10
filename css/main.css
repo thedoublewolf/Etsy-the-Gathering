@@ -4,7 +4,6 @@ body {
 .etsyHeader {
   background-color: white;
   margin: 0 auto;
-  text-align: center;
   width: 100%;
   padding-bottom: 0px; }
 
@@ -117,7 +116,8 @@ h2 {
   display: inline-block;
   border: 1px solid lightgrey;
   border-radius: 3px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-left: 5px; }
 
 .searchBox {
   border: none;
@@ -138,14 +138,14 @@ h2 {
 
 .subHeader {
   width: 980px;
-  margin: 0 auto;
-  background-color: white;
-  text-align: left; }
+  margin: auto;
+  background-color: white; }
+  .subHeader nav {
+    text-align: left; }
 
 ul {
   display: inline-block;
-  margin: 0px;
-  padding-left: 100px; }
+  margin: 0px; }
 
 nav {
   width: 100%;
@@ -170,11 +170,14 @@ nav {
 
 sidebar {
   width: 25%;
-  float: left; }
+  float: left;
+  padding-top: 4px; }
   sidebar p {
     margin-left: 0px;
     padding: 0;
-    font-size: 0.9em; }
+    color: #555555;
+    font-weight: bold;
+    font-size: 0.8em; }
   sidebar ul {
     background-color: white;
     border: 1px solid lightgrey;
@@ -185,13 +188,23 @@ sidebar {
     sidebar ul p {
       margin: 0;
       font-size: 0.85em; }
+    sidebar ul a span {
+      color: #555555;
+      font-weight: bold; }
+    sidebar ul a span:hover {
+      text-decoration: underline; }
     sidebar ul li {
       display: block;
       padding: 5px;
-      font-size: 0.85em; }
+      font-size: 0.8em; }
+      sidebar ul li span {
+        color: #555555;
+        font-weight: bold; }
       sidebar ul li a {
-        padding: 20px;
+        padding: 10px;
         color: #5D91B8; }
+      sidebar ul li a:hover {
+        text-decoration: underline; }
     sidebar ul hr {
       width: 210px;
       margin-top: 15px;
@@ -260,11 +273,10 @@ sidebar {
     padding-left: 5px; }
 
 .magicStuff {
-  text-align: center;
   float: right;
   width: 75%;
   border: 0px solid black;
-  margin-top: 12px; }
+  margin-top: 15px; }
   .magicStuff ul {
     float: left;
     padding-left: 0px;
@@ -274,7 +286,19 @@ sidebar {
     display: inline-block;
     font-size: 0.9em; }
   .magicStuff .cat {
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin-bottom: 3px;
+    color: #555555;
+    font-weight: bold;
+    font-size: 0.8em; }
+    .magicStuff .cat a {
+      color: #5D91B8;
+      font-weight: 400;
+      font-size: 1.1em; }
+    .magicStuff .cat span {
+      color: grey;
+      font-weight: 400;
+      font-size: 1.1em; }
   .magicStuff .sort {
     padding-left: 205px; }
   .magicStuff .magicItem {
@@ -286,6 +310,8 @@ sidebar {
     margin: 5px;
     overflow: hidden;
     position: relative; }
+    .magicStuff .magicItem a {
+      color: black; }
     .magicStuff .magicItem .heartHidden {
       position: absolute;
       background-color: white;
@@ -294,6 +320,7 @@ sidebar {
       width: 20px;
       height: 20px;
       padding: 3px;
+      top: 3px;
       left: 161px;
       z-index: -1; }
     .magicStuff .magicItem .heartShown {
@@ -304,6 +331,7 @@ sidebar {
       width: 20px;
       height: 20px;
       padding: 3px;
+      top: 3px;
       left: 161px; }
     .magicStuff .magicItem .hamburgerHidden {
       position: absolute;
@@ -313,6 +341,7 @@ sidebar {
       width: 20px;
       height: 20px;
       padding: 3px;
+      top: 3px;
       right: 5px;
       z-index: -1; }
     .magicStuff .magicItem .hamburgerShown {
@@ -323,6 +352,7 @@ sidebar {
       width: 20px;
       height: 20px;
       padding: 3px;
+      top: 3px;
       right: 5px; }
     .magicStuff .magicItem .magicpic {
       width: 225px; }
@@ -354,4 +384,33 @@ sidebar {
       white-space: nowrap;
       text-overflow: ellipsis; }
   .magicStuff .magicItem:hover {
-    cursor: pointer; }
+    box-shadow: 0px 1px 2px lightgrey; }
+
+.footer {
+  float: right;
+  width: 75%; }
+  .footer p {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .footer ul {
+    vertical-align: top;
+    padding-left: 0px;
+    width: 200px;
+    display: inline-block; }
+    .footer ul li {
+      margin-bottom: 10px; }
+    .footer ul li a {
+      font-size: 0.85em;
+      color: #5D91B8; }
+  .footer .pageNav {
+    padding-bottom: 50px; }
+    .footer .pageNav button {
+      font-size: 0.9em;
+      font-weight: bold;
+      color: grey;
+      background-color: white;
+      border: 1px solid lightgrey;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      margin-right: -6px; }

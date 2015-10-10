@@ -5,7 +5,6 @@ body {
 .etsyHeader {
 	background-color: white;
 	margin: 0 auto;
-	text-align: center;
 	width: 100%;
 	padding-bottom: 0px;
 }
@@ -122,6 +121,7 @@ hr {
 		border: 1px solid lightgrey;
 		border-radius: 3px;
 		margin-bottom: 10px;
+		margin-left: 5px;
 	}
 	.searchBox {
 		border: none;
@@ -142,14 +142,15 @@ hr {
 	}
 	.subHeader {
 		width: 980px;
-		margin: 0 auto;
+		margin: auto;	
 		background-color: white;
-		text-align: left;
+		nav {
+			text-align: left;
+		}
 	}
 	ul {
 			display: inline-block;
 			margin: 0px;
-			padding-left: 100px;
 	}
 	nav {
 		width: 100%;
@@ -178,10 +179,13 @@ hr {
 	sidebar {
 		width: 25%;
 		float: left;
+		padding-top: 4px;
 		p {
 			margin-left: 0px;
 			padding: 0;
-			font-size: 0.9em;
+			color: #555555;
+			font-weight: bold;
+			font-size: 0.8em;
 		}
 		ul {
 			background-color: white;
@@ -194,13 +198,27 @@ hr {
 				margin: 0;
 				font-size: 0.85em;
 			}
+			a span {
+				color: #555555;
+				font-weight: bold;
+				}
+			a span:hover {
+				text-decoration: underline;
+			}
 			li {
 				display: block;
 				padding: 5px;
-				font-size: 0.85em;
+				font-size: 0.8em;
+				span {
+					color: #555555;
+					font-weight: bold;
+				}
 				a {
-					padding: 20px;
+					padding: 10px;
 					color: #5D91B8;
+				}
+				a:hover {
+					text-decoration: underline;
 				}
 			}
 			hr {
@@ -290,11 +308,10 @@ hr {
 	}
 
 .magicStuff {
-	text-align: center;
 	float: right;
 	width: 75%;
 	border: 0px solid black;
-	margin-top: 12px;
+	margin-top: 15px;
 	ul {
 		float: left;
 		padding-left: 0px;
@@ -308,6 +325,20 @@ hr {
 	}
 	.cat {
 		padding-left: 20px;
+		margin-bottom: 3px;
+		color: #555555;
+		font-weight: bold;
+		font-size: 0.8em;
+		a {
+			color: #5D91B8;
+			font-weight: 400;
+			font-size: 1.1em;
+		}
+		span {
+			color: grey;
+			font-weight: 400;
+			font-size: 1.1em;
+		}
 	}
 	.sort {
 		padding-left: 205px;
@@ -321,6 +352,9 @@ hr {
 		margin: 5px;
 		overflow: hidden;
 		position: relative;
+		a {
+			color: black;
+		}
 		.heartHidden {
 		position: absolute;
 		background-color: white;
@@ -329,6 +363,7 @@ hr {
 		width: 20px;
 		height: 20px;
 		padding: 3px;
+		top: 3px;
 		left: 161px;
 		z-index: -1;
 		}
@@ -340,6 +375,7 @@ hr {
 		width: 20px;
 		height: 20px;
 		padding: 3px;
+		top: 3px;
 		left: 161px;
 		}
 		.hamburgerHidden {
@@ -350,6 +386,7 @@ hr {
 		width: 20px;
 		height: 20px;
 		padding: 3px;
+		top: 3px;
 		right: 5px;
 		z-index: -1;
 		}
@@ -361,6 +398,7 @@ hr {
 		width: 20px;
 		height: 20px;
 		padding: 3px;
+		top: 3px;
 		right: 5px;
 		}
 		.magicpic {
@@ -398,7 +436,42 @@ hr {
 		}
 	}
 	.magicItem:hover {
-		cursor: pointer;
+		box-shadow: 0px 1px 2px lightgrey; 
+	}
+}
+.footer {
+	float: right;
+	width: 75%;
+	p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	ul {
+		vertical-align: top;
+		padding-left: 0px;
+		width: 200px;
+		display: inline-block;
+		li {
+			margin-bottom: 10px;
+		}
+		li a {
+			font-size: 0.85em;
+			color: #5D91B8;
+		}
+	}
+	.pageNav {
+		padding-bottom: 50px;
+		button {
+			font-size: 0.9em;
+			font-weight: bold;
+			color: grey;
+			background-color: white;
+			border: 1px solid lightgrey;
+			width: 40px;
+			height: 40px;
+			padding: 0;
+			margin-right: -6px;
+		}
 	}
 }
 

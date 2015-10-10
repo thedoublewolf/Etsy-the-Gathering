@@ -10,7 +10,6 @@
   	$('.magicStuff').append(itemHTML);
 	});
 
-
   // On each item on mouseover, find the descendant and remove/add class
   $('.magicItem').mouseover( '.heartHam', function (event){
   	console.log(event);

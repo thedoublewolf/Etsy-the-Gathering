@@ -23,4 +23,12 @@
   	$(this).find('#hamburger').addClass('hamburgerHidden').removeClass('hamburgerShown');
   });
 
+  $('#gideon').mouseover( function (){
+    $('#gideon').removeClass('gideon').addClass('gideonHidden');
+  });
+
+  $('#message').mouseover( function (){
+    $('#message').removeClass('message').addClass('messageHidden');
+  });
+
 }());

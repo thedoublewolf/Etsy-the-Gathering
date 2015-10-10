@@ -474,5 +474,50 @@ hr {
 		}
 	}
 }
+.gideon {
+	width: 500px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	animation-duration: 2s;
+	animation-name: slidein;
+	}
+	@keyframes slidein {
+		from {
+			right: -500px
+		}
+		to {
+			right: 0;
+	}
+}
+.gideonHidden {
+	width: 500px;
+	position: fixed;
+	bottom: -500px;
+	right: 0px;
+	transition: bottom 2s;
+}
+.message {
+	width: 500px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	animation-duration: 2s;
+	animation-name: slidein;
+	}
+	@keyframes slidein {
+		from {
+			right: -500px
+		}
+		to {
+			right: 0;
+	}
+}
+.messageHidden {
+	width: 500px;
+	position: fixed;
+	bottom: -500px;
+	right: 0px;
+}
 
 
